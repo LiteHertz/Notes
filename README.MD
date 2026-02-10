@@ -1,6 +1,6 @@
 # Os-Setup repo
 
-## Install ':'
+## Install
 
 - QCAD
 - Spotify
@@ -14,7 +14,7 @@
 - Tailscale
 - 7-Zip
 
-### Install (Optional) ':'
+### Install (Optional)
 
 - Terminator.exe (RS232)
 - Samsung notes
@@ -37,13 +37,13 @@ Change :
 
 ---
 
-### Install (Windows) ':'
+### Install (Windows)
 
 - PowerToys
 - Devtoys
 - TranslucentTB (See [settings.json](https://github.com/LiteHertz/OS-Setup/blob/main/Windows%2011/TranslucentTB/settings.json) in TranslucentTB folder)
 
-### Change (Windows) ':'
+### Change (Windows)
 
 - Install [MacOS cursors by antiden](https://github.com/antiden/macOS-cursors-for-Windows)
 - Turn on clipboard history (Win + V)
@@ -57,7 +57,7 @@ Change :
 
 ---
 
-### Change (Linux) ':'
+### Change (Linux)
 
 - Setup .bashrc file
 - Install neofetch (for .bashrc)
