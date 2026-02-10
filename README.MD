@@ -35,15 +35,17 @@ Change :
 
 - Set Wallpapers to those of OS DATA Folder
 
+---
+
 ### Install (Windows) ':'
 
 - PowerToys
 - Devtoys
-- TranslucentTB (See settings.json in TranslucentTB folder)
+- TranslucentTB (See [settings.json](https://github.com/LiteHertz/OS-Setup/blob/main/Windows%2011/TranslucentTB/settings.json) in TranslucentTB folder)
 
 ### Change (Windows) ':'
 
-- Install MacOS cursors [Cursors by antiden](https://github.com/antiden/macOS-cursors-for-Windows)
+- Install [MacOS cursors by antiden](https://github.com/antiden/macOS-cursors-for-Windows)
 - Turn on clipboard history (Win + V)
     (Settings -> Personalisation)
 - Turn on transparency effects
@@ -52,6 +54,8 @@ Change :
 - Set lock screen settings
 - Set Start
 - Set TranslucentTB
+
+---
 
 ### Change (Linux) ':'
 
