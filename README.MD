@@ -48,15 +48,7 @@
 - TranslucentTB (See [settings.json](https://github.com/LiteHertz/OS-Setup/blob/main/Windows%2011/TranslucentTB/settings.json) in TranslucentTB folder)
 - AutoHotkey ([Media Skip.ahk](https://github.com/LiteHertz/OS-Setup/blob/main/Windows%2011/Media%20Skip.ahk))
 
-    > Win + R
-    >
-    > `shell:startup`
-    >
-    > Enter
-    >
-    > Right click -> New -> Shortcut
-    >
-    > Browse to `Windows 11\Media Skip.ahk` script file.
+- Install [WindHawk](https://ramensoftware.com/downloads/windhawk_setup.exe) and these mods :
 
 ### Change (Windows)
 
@@ -66,9 +58,35 @@
 - Turn on transparency effects
 - Set accent color to automatic
 - Turn on show accent color on title bars and windows borders
-- Set lock screen settings
-- Set Start
-- Set TranslucentTB
+- Setup lock screen settings
+- Setup Start
+- Setup WindHawk
+    > Start Menu Styler [TranslucentStartMenu](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/TranslucentStartMenu)
+    >
+    > Notification Center Styler [TranslucentShell](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/tree/main/Themes/TranslucentShell)
+    >
+    >Slick Window Arrangement
+    >
+    >Taskbar height and icon size
+    >
+    > ```json
+    > TaskbarHeight: 36
+    > IconSize: 24
+    > TaskbarButtonWidth: 40
+    > IconSizeSmall: 10
+    > TaskbarButtonWidthSmall: 10
+    > ```
+
+- Setup AutoHotKey
+    > Win + R
+    >
+    > `shell:startup`
+    >
+    > Enter
+    >
+    > Right click -> New -> Shortcut
+    >
+    > Browse to `Windows 11\Media Skip.ahk` script file.
 
 ---
 
