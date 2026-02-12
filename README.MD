@@ -45,10 +45,8 @@
 
 - PowerToys
 - Devtoys
-- TranslucentTB (See [settings.json](https://github.com/LiteHertz/OS-Setup/blob/main/Windows%2011/TranslucentTB/settings.json) in TranslucentTB folder)
-- AutoHotkey ([Media Skip.ahk](https://github.com/LiteHertz/OS-Setup/blob/main/Windows%2011/Media%20Skip.ahk))
-
-- Install [WindHawk](https://ramensoftware.com/downloads/windhawk_setup.exe) and these mods :
+- [AutoHotkey](https://www.autohotkey.com/download/ahk-v2.exe) ([Media.ahk](https://github.com/LiteHertz/OS-Setup/blob/main/Windows%2011/Media.ahk))
+- [WindHawk](https://ramensoftware.com/downloads/windhawk_setup.exe)
 
 ### Change (Windows)
 
