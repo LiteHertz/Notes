@@ -45,7 +45,7 @@
 
 - PowerToys
 - Devtoys
-- [AutoHotkey](https://www.autohotkey.com/download/ahk-v2.exe) ([Media.ahk](https://github.com/LiteHertz/OS-Setup/blob/main/Windows%2011/Media.ahk))
+- [AutoHotkey](https://www.autohotkey.com/download/ahk-v2.exe) ([AutoHotkey.ahk](https://github.com/LiteHertz/OS-Setup/blob/main/Windows%2011/AutoHotkey.ahk))
 - [WindHawk](https://ramensoftware.com/downloads/windhawk_setup.exe)
 
 ### Change (Windows)
@@ -84,7 +84,7 @@
     >
     > Right click -> New -> Shortcut
     >
-    > Browse to `Windows 11\Media Skip.ahk` script file.
+    > Browse to `Windows 11\AutoHotkey.ahk` script file.
 
 ---
 
