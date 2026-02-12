@@ -2,6 +2,7 @@
 
 PrintScreen::Media_Next
 Insert::Media_Prev
+
 Persistent
 
 SetNumLockState("AlwaysOn")

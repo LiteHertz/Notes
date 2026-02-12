@@ -60,9 +60,11 @@
 - Setup window snap (Settings -> System -> Multi-tasking -> SnapWindows -> Snap windows On, all the rest off)
 - Setup Start
 - Setup WindHawk
-    > Start Menu Styler [TranslucentStartMenu](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/TranslucentStartMenu)
+    > Start Menu Styler [TranslucentStartMenu](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/TranslucentStartMenu/README.md)
     >
-    > Notification Center Styler [TranslucentShell](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/tree/main/Themes/TranslucentShell)
+    > Notification Center Styler [TranslucentShell](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/tree/main/Themes/TranslucentShell/README.md)
+    >
+    >Windows 11 Taskbar Styler[TranslucentTaskbar](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/Themes/TranslucentTaskbar/README.md)
     >
     >Taskbar height and icon size
     >
