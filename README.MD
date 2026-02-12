@@ -57,13 +57,12 @@
 - Set accent color to automatic
 - Turn on show accent color on title bars and windows borders
 - Setup lock screen settings
+- Setup window snap (Settings -> System -> Multi-tasking -> SnapWindows -> Snap windows On, all the rest off)
 - Setup Start
 - Setup WindHawk
     > Start Menu Styler [TranslucentStartMenu](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/TranslucentStartMenu)
     >
     > Notification Center Styler [TranslucentShell](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/tree/main/Themes/TranslucentShell)
-    >
-    >Slick Window Arrangement
     >
     >Taskbar height and icon size
     >
