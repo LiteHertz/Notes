@@ -1,6 +1,6 @@
 # Notes repo
 
-## This repo contains many markdown files for various projects.
+## This repo contains many markdown files for various projects
 
 1. [OS-Setup](/OS-Setup/)
 
@@ -15,3 +15,7 @@
 1. [Coffee Machine](/Coffee%20Machine/)
 
     - [Coffee Machine Guide](/Coffee%20Machine/Coffee%20Machine%20Guide.MD)
+
+<details>
+here is the info
+</details>
