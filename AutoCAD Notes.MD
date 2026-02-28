@@ -46,3 +46,8 @@
 ## XREFS
 Les fichiers de xrefs sont sauvegardés dans `C:\AUTOCADXREFS`
 > 1. Logo manac &rarr; `manac.png`
+
+## How to use AutoLisp files
+1. Dans AutoCAD, executer: APPLOAD &rarr; importer `AutoLisp_File.LSP`.
+1. Appeler la routine `AutoLisp_File.LSP` sans l'extension de ficher (`AutoLisp_File`)
+
