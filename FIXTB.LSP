@@ -14,6 +14,8 @@
                    EraseBlockRefs
                    PurgeBlock
                    InsertBlock
+                   definedDefaultPath
+                   userChoice
                  )
 
   (defun *error* (msg)
@@ -30,6 +32,7 @@
   ;; --- Configurable names (hard-coded as requested) ---
   (setq blkName "TitleBlock1117")
   (setq imgName "manac.png")
+  (setq definedDefaultPath "C:/Users/alexfort/OneDrive - manac.com/Documents/Alexis - MANAC/ACADE/Modèles/ACADE/Gabarits/TitleBlock1117.dwg")
 
   ;; ----------------- Helpers -----------------
   (defun EraseBlockRefs (name / ss)
@@ -58,22 +61,38 @@
   (defun DetachImage (name /)
     ;; Try with full name as given
     (command "_.-XREF"  "_D" name)
+    (command "_.-IMAGE" "_D" imgName)
     (princ (strcat "\nTried to detach image/xref: " name " (and base name)."))
   )
 
-  (defun InsertBlock (name / candidate fpath)
-    ;; Find TitleBlock1117.dwg in search paths or ask the user
+  (defun InsertBlock (name useDefault defaultPath / candidate fpath)
+    ;; Ask the user for TB path or use default
     (setq candidate (strcat name ".dwg"))
-    (setq fpath (findfile candidate))
-    (if (not fpath)
-      (setq fpath (getfiled (strcat "Select " candidate) (getvar "DWGPREFIX") "dwg" 0))
+    (if (= useDefault 0)
+      (setq fpath defaultPath)
+
+      ;; --- Otherwise use the original behaviour ---
+      (progn
+        (setq fpath (findfile candidate))
+        (if (not fpath)
+          (setq fpath
+                 (getfiled
+                   (strcat "Select " candidate)
+                   (getvar "DWGPREFIX")
+                   "dwg"
+                   0
+                 )
+          )
+        )
+      )
     )
+
     (if fpath
       (progn
         ;; Use -INSERT with path so it (re)defines the block and places it
         ;; Point=0,0  Scale=1  Rotation=0
         (command "_.-INSERT" fpath "0,0" 1 1 0)
-        (princ (strcat "\nInserted " name " at 0,0 from: " fpath))
+        (princ (strcat "\nInserted " name " at 0,0 from: " fpath "\n"))
         T
       )
       (progn
@@ -95,8 +114,14 @@
   ;; 3) Detach the image/xref manac.png
   ;; (DetachImage imgName)
 
+
+  ;; Ask user for choice
+  (setq userChoice (getint "\nUse default path? 0=Yes  1=Browse/Find: "))
+  (if (null userChoice) (setq userChoice 0))
+
+
   ;; 4) Reinsert the TitleBlock1117 at 0,0 (from DWG file)
-  (if (InsertBlock blkName)
+  (if (InsertBlock blkName userChoice definedDefaultPath)
     (progn
       ;; 5) Toggle IMAGEFRAME 1 then 0
       (setvar "IMAGEFRAME" 1)
