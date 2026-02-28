@@ -55,17 +55,9 @@
     )
   )
 
-  (defun DetachImage (name / try)
-    ;; Try multiple ways to detach raster image via -XREF and -IMAGE
-    (defun try (cmd opt nm)
-      (vl-catch-all-apply 'command (list cmd opt nm))
-    )
+  (defun DetachImage (name /)
     ;; Try with full name as given
-    (try "_.-XREF"  "_D" name)
-    (try "_.-IMAGE" "_D" name)
-    ;; Try base name (without extension)
-    (try "_.-XREF"  "_D" (vl-filename-base name))
-    (try "_.-IMAGE" "_D" (vl-filename-base name))
+    (command "_.-XREF"  "_D" name)
     (princ (strcat "\nTried to detach image/xref: " name " (and base name)."))
   )
 
@@ -101,7 +93,7 @@
   (PurgeBlock blkName)
 
   ;; 3) Detach the image/xref manac.png
-  (DetachImage imgName)
+  ;; (DetachImage imgName)
 
   ;; 4) Reinsert the TitleBlock1117 at 0,0 (from DWG file)
   (if (InsertBlock blkName)
