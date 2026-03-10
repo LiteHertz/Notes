@@ -16,6 +16,5 @@
 
     - [Coffee Machine Guide](/Coffee%20Machine/Coffee%20Machine%20Guide.MD)
 
-<details>
-here is the info
-</details>
+1. [Raw photo edits](/Raw%20Photo%20Edits/)
+    - [Raw photo edits Guide](/Raw%20Photo%20Edits/Raw%20Photo%20Edits%20Guide.MD)
