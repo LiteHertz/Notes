@@ -6,7 +6,7 @@
 
 - QCAD
 - Spotify
-- Vscode
+- Vscode (VSCodium)
 - AI
 - Brave
 - Samsung Flow
@@ -32,6 +32,7 @@
 - Python
 - Zotero
 - SyncThing
+- Camera utilities (Canon or Sony)
 
 ### Change
 
@@ -86,6 +87,19 @@
     > Right click -> New -> Shortcut
     >
     > Browse to `Windows 11\AutoHotkey.ahk` script file.
+
+- Run [CTT Tool](https://christitus.com/windows-tool/)  
+Command : `iwr -useb https://christitus.com/win | iex`  
+Tweaks : Standard
+    > Remove widgets
+    > Brave debloat
+    > Disable copilot
+    > Remove Microsoft Edge
+    > Remove Xbox and Gaming components
+Config :
+    > NFS
+    > Windows Sandbon
+    > WSL
 
 ---
 
