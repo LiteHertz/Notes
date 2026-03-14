@@ -27,6 +27,7 @@
 ## Modification de l’affichage
 - Possible d’afficher localisation ou description plutôt que noms de dessins.
 - Description 1 à 3 : Nom du projet, N/A, unique au dessin.
+- Affichage de l'UCS dans le coin au lieu de snap to origin : `UCSICON` `NOORIGIN`
 
 ## Copier un dessin entre projets
 1. Copier via Windows.

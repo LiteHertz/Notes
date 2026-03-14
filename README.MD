@@ -1,6 +1,6 @@
 # Notes repo
 
-## This repo contains many markdown files for various projects
+## This repo contains many note files for various projects
 
 1. [OS-Setup](/OS-Setup/)
 
