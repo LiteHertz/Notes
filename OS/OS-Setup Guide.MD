@@ -15,6 +15,7 @@
 - TeamViewer
 - Tailscale
 - 7-Zip
+- Sublime text
 
 ### Install (Optional)
 
