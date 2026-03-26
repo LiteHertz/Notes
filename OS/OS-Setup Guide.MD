@@ -34,6 +34,7 @@
 - Zotero
 - SyncThing
 - Camera utilities (Canon or Sony)
+- Wireshark
 
 ### Change
 
