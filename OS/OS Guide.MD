@@ -6,6 +6,7 @@
 - `ipconfig`
 - `nslookup` ip
 - `tracert` ip
+- `nmap`
 
 ## Linux
 
