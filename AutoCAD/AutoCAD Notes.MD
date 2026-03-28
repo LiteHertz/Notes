@@ -46,9 +46,16 @@
 
 ## XREFS
 Les fichiers de xrefs sont sauvegardés dans `C:\AUTOCADXREFS`
-> 1. Logo manac &rarr; `manac.png`
+1. Logo manac &rarr; `manac.png`
 
-## How to use AutoLisp files
+## Comment utiliser les AutoLisp files
 1. Dans AutoCAD, executer: APPLOAD &rarr; importer `AutoLisp_File.LSP`.
 1. Appeler la routine `AutoLisp_File.LSP` sans l'extension de ficher (`AutoLisp_File`)
 
+## Impression (éviter les lignes diagonales dans hachures)
+
+Paramètres à adopdter :
+1. Utiliser **`PDF-XChange Editor`**
+1. Sélectionner l’option **`Designs (CAD)`** (dans le logiciel d’impression)
+1. Utiliser  la résolution **`600dpi`** (1200dpi ne fonctionne pas bien)
+1. mode d’impression des couleurs Automatique, Couleur et noir/blanc **`(Auto [Color/B&W])`**
