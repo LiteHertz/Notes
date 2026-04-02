@@ -10,6 +10,8 @@
 
 ## Linux
 
+- GTFO Bins
+
 ## Other notes
 
 
