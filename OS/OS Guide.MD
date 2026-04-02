@@ -6,7 +6,6 @@
 - `ipconfig`
 - `nslookup` ip
 - `tracert` ip
-- `nmap`
 
 ## Linux
 
@@ -14,4 +13,5 @@
 
 ## Other notes
 
-
+- `nmap` Port scanning tool (netwkoring)
+- `Nikto` Web entry points tool (kinda like nmap for web?)
