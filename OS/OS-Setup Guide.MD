@@ -103,6 +103,9 @@ Config :
     > Windows Sandbon
     > WSL
 
+- Turn off narator shortcut (Settings &rarr; Accessibility &rarr; Narrator)
+- Turn off sticky keys shortcut (Settings &rarr; Accessibility &rarr; Keyboard)
+
 ---
 
 ## Linux
