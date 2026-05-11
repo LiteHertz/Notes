@@ -35,6 +35,8 @@
 - SyncThing
 - Camera utilities (Canon or Sony)
 - Wireshark
+- OBS Studio
+- Camo
 
 ### Change
 
