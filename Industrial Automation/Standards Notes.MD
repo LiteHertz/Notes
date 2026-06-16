@@ -8,3 +8,6 @@
 
 - NFPA170-1999
 - ISO 7000 / IEC 60417
+
+## Harmonic limits
+IEEE 519-1992
