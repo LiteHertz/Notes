@@ -6,6 +6,7 @@
 - `ipconfig`
 - `nslookup` ip
 - `tracert` ip
+- Command to show used ip adresses in the current network: `arp -a`
 
 ## Linux
 
