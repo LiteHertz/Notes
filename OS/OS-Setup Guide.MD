@@ -16,6 +16,8 @@
 - Tailscale
 - 7-Zip
 - Sublime text
+- Handbrake
+- Anki
 
 ### Install (Optional)
 
@@ -117,3 +119,23 @@ Config :
 
 - Setup .bashrc file
 - Install neofetch (for .bashrc)
+
+## MacOS
+
+### Change (MacOS)
+
+- Mos : Activate start a login, disable keys and smooth scrolling
+- Alttab : set command + tab shorcut and deactivate capture windows in the background
+
+
+### Install (MacOS)
+
+- [Mos](https://mos.caldis.me/) `brew install --cask mos`
+- Alttab
+- SwiftQuit
+- iTerm
+- Amphetamine
+- Onyx
+- Raycast
+- Rectangle
+- Neardrop
