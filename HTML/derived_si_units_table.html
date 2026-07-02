@@ -1,0 +1,157 @@
+
+<style>
+  .si-wrap { padding: 1rem 0; font-family: var(--font-sans); }
+  h2.sr-only { position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0); }
+  .order-section { margin-bottom: 1.5rem; }
+  .order-header { display:flex; align-items:center; gap:10px; margin-bottom:0.5rem; }
+  .order-badge { font-size:11px; font-weight:500; padding:3px 10px; border-radius:20px; white-space:nowrap; }
+  .order-title { font-size:14px; font-weight:500; color:var(--color-text-secondary); }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  thead tr { border-bottom:1.5px solid var(--color-border-primary); }
+  th { text-align:left; padding:6px 10px; font-weight:500; font-size:12px; color:var(--color-text-secondary); text-transform:uppercase; letter-spacing:0.04em; }
+  td { padding:7px 10px; border-bottom:1px solid var(--color-border-tertiary); color:var(--color-text-primary); vertical-align:middle; }
+  tr:last-child td { border-bottom:none; }
+  .unit-name { font-weight:500; }
+  .sym { font-family:var(--font-mono); font-size:13px; color:var(--color-text-secondary); }
+  .formula { font-family:var(--font-mono); font-size:12px; color:var(--color-text-tertiary); }
+  .qty { color:var(--color-text-primary); }
+
+  .badge-0 { background:#E1F5EE; color:#0F6E56; }
+  .badge-1 { background:#E6F1FB; color:#185FA5; }
+  .badge-2 { background:#EEEDFE; color:#534AB7; }
+  .badge-3 { background:#FAEEDA; color:#854F0B; }
+  .badge-4 { background:#FAECE7; color:#993C1D; }
+  .badge-5 { background:#FBEAF0; color:#993556; }
+
+  @media (prefers-color-scheme: dark) {
+    .badge-0 { background:#085041; color:#9FE1CB; }
+    .badge-1 { background:#0C447C; color:#B5D4F4; }
+    .badge-2 { background:#3C3489; color:#CECBF6; }
+    .badge-3 { background:#633806; color:#FAC775; }
+    .badge-4 { background:#712B13; color:#F5C4B3; }
+    .badge-5 { background:#72243E; color:#F4C0D1; }
+  }
+</style>
+
+<div class="si-wrap">
+  <h2 class="sr-only">Derived SI units organized by order of derivation from base units</h2>
+
+  <!-- Order 0 -->
+  <div class="order-section">
+    <div class="order-header">
+      <span class="order-badge badge-0">Order 0 — Base units</span>
+      <span class="order-title">Fundamental, not derived</span>
+    </div>
+    <table>
+      <thead><tr><th>Quantity</th><th>Unit</th><th>Symbol</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td class="qty">Length</td><td class="unit-name">Metre</td><td class="sym">m</td><td class="formula">base unit</td></tr>
+        <tr><td class="qty">Mass</td><td class="unit-name">Kilogram</td><td class="sym">kg</td><td class="formula">base unit</td></tr>
+        <tr><td class="qty">Time</td><td class="unit-name">Second</td><td class="sym">s</td><td class="formula">base unit</td></tr>
+        <tr><td class="qty">Temperature</td><td class="unit-name">Kelvin</td><td class="sym">K</td><td class="formula">base unit</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Order 1 -->
+  <div class="order-section">
+    <div class="order-header">
+      <span class="order-badge badge-1">Order 1 — First derivative</span>
+      <span class="order-title">Directly from base units</span>
+    </div>
+    <table>
+      <thead><tr><th>Quantity</th><th>Unit</th><th>Symbol</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td class="qty">Velocity / Speed</td><td class="unit-name">—</td><td class="sym">m/s</td><td class="formula">m · s⁻¹</td></tr>
+        <tr><td class="qty">Area</td><td class="unit-name">—</td><td class="sym">m²</td><td class="formula">m²</td></tr>
+        <tr><td class="qty">Volume</td><td class="unit-name">—</td><td class="sym">m³</td><td class="formula">m³</td></tr>
+        <tr><td class="qty">Frequency</td><td class="unit-name">Hertz</td><td class="sym">Hz</td><td class="formula">s⁻¹</td></tr>
+        <tr><td class="qty">Density</td><td class="unit-name">—</td><td class="sym">kg/m³</td><td class="formula">kg · m⁻³</td></tr>
+        <tr><td class="qty">Specific volume</td><td class="unit-name">—</td><td class="sym">m³/kg</td><td class="formula">m³ · kg⁻¹</td></tr>
+        <tr><td class="qty">Angular velocity</td><td class="unit-name">—</td><td class="sym">rad/s</td><td class="formula">s⁻¹</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Order 2 -->
+  <div class="order-section">
+    <div class="order-header">
+      <span class="order-badge badge-2">Order 2 — Second derivative</span>
+      <span class="order-title">One step beyond velocity / area</span>
+    </div>
+    <table>
+      <thead><tr><th>Quantity</th><th>Unit</th><th>Symbol</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td class="qty">Acceleration</td><td class="unit-name">—</td><td class="sym">m/s²</td><td class="formula">m · s⁻²</td></tr>
+        <tr><td class="qty">Angular acceleration</td><td class="unit-name">—</td><td class="sym">rad/s²</td><td class="formula">s⁻²</td></tr>
+        <tr><td class="qty">Kinematic viscosity</td><td class="unit-name">—</td><td class="sym">m²/s</td><td class="formula">m² · s⁻¹</td></tr>
+        <tr><td class="qty">Volumetric flow rate</td><td class="unit-name">—</td><td class="sym">m³/s</td><td class="formula">m³ · s⁻¹</td></tr>
+        <tr><td class="qty">Mass flow rate</td><td class="unit-name">—</td><td class="sym">kg/s</td><td class="formula">kg · s⁻¹</td></tr>
+        <tr><td class="qty">Heat flux density</td><td class="unit-name">—</td><td class="sym">W/m²</td><td class="formula">kg · s⁻³</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Order 3 -->
+  <div class="order-section">
+    <div class="order-header">
+      <span class="order-badge badge-3">Order 3 — Third derivative / force-level</span>
+      <span class="order-title">Involve force, energy, or momentum</span>
+    </div>
+    <table>
+      <thead><tr><th>Quantity</th><th>Unit</th><th>Symbol</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td class="qty">Force</td><td class="unit-name">Newton</td><td class="sym">N</td><td class="formula">kg · m · s⁻²</td></tr>
+        <tr><td class="qty">Momentum / Impulse</td><td class="unit-name">—</td><td class="sym">kg·m/s</td><td class="formula">kg · m · s⁻¹</td></tr>
+        <tr><td class="qty">Torque / Moment</td><td class="unit-name">Newton-metre</td><td class="sym">N·m</td><td class="formula">kg · m² · s⁻²</td></tr>
+        <tr><td class="qty">Angular momentum</td><td class="unit-name">—</td><td class="sym">kg·m²/s</td><td class="formula">kg · m² · s⁻¹</td></tr>
+        <tr><td class="qty">Pressure / Stress</td><td class="unit-name">Pascal</td><td class="sym">Pa</td><td class="formula">kg · m⁻¹ · s⁻²</td></tr>
+        <tr><td class="qty">Dynamic viscosity</td><td class="unit-name">Pascal-second</td><td class="sym">Pa·s</td><td class="formula">kg · m⁻¹ · s⁻¹</td></tr>
+        <tr><td class="qty">Surface tension</td><td class="unit-name">—</td><td class="sym">N/m</td><td class="formula">kg · s⁻²</td></tr>
+        <tr><td class="qty">Stiffness / Spring constant</td><td class="unit-name">—</td><td class="sym">N/m</td><td class="formula">kg · s⁻²</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Order 4 -->
+  <div class="order-section">
+    <div class="order-header">
+      <span class="order-badge badge-4">Order 4 — Energy / power level</span>
+      <span class="order-title">Force × distance, or power quantities</span>
+    </div>
+    <table>
+      <thead><tr><th>Quantity</th><th>Unit</th><th>Symbol</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td class="qty">Energy / Work / Heat</td><td class="unit-name">Joule</td><td class="sym">J</td><td class="formula">kg · m² · s⁻²</td></tr>
+        <tr><td class="qty">Power / Radiant flux</td><td class="unit-name">Watt</td><td class="sym">W</td><td class="formula">kg · m² · s⁻³</td></tr>
+        <tr><td class="qty">Kinetic energy</td><td class="unit-name">Joule</td><td class="sym">J</td><td class="formula">½ mv² = kg · m² · s⁻²</td></tr>
+        <tr><td class="qty">Moment of inertia</td><td class="unit-name">—</td><td class="sym">kg·m²</td><td class="formula">kg · m²</td></tr>
+        <tr><td class="qty">Specific heat capacity</td><td class="unit-name">—</td><td class="sym">J/(kg·K)</td><td class="formula">m² · s⁻² · K⁻¹</td></tr>
+        <tr><td class="qty">Thermal conductivity</td><td class="unit-name">—</td><td class="sym">W/(m·K)</td><td class="formula">kg · m · s⁻³ · K⁻¹</td></tr>
+        <tr><td class="qty">Gravitational potential</td><td class="unit-name">—</td><td class="sym">J/kg</td><td class="formula">m² · s⁻²</td></tr>
+        <tr><td class="qty">Absorbed dose (radiation)</td><td class="unit-name">Gray</td><td class="sym">Gy</td><td class="formula">m² · s⁻²</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Order 5 -->
+  <div class="order-section">
+    <div class="order-header">
+      <span class="order-badge badge-5">Order 5 — Higher-order / composite</span>
+      <span class="order-title">Built on energy, power, or multiple compound quantities</span>
+    </div>
+    <table>
+      <thead><tr><th>Quantity</th><th>Unit</th><th>Symbol</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td class="qty">Power density</td><td class="unit-name">—</td><td class="sym">W/m³</td><td class="formula">kg · m⁻¹ · s⁻³</td></tr>
+        <tr><td class="qty">Energy density</td><td class="unit-name">—</td><td class="sym">J/m³</td><td class="formula">kg · m⁻¹ · s⁻²</td></tr>
+        <tr><td class="qty">Specific energy</td><td class="unit-name">—</td><td class="sym">J/kg</td><td class="formula">m² · s⁻²</td></tr>
+        <tr><td class="qty">Jerk</td><td class="unit-name">—</td><td class="sym">m/s³</td><td class="formula">m · s⁻³</td></tr>
+        <tr><td class="qty">Snap (jounce)</td><td class="unit-name">—</td><td class="sym">m/s⁴</td><td class="formula">m · s⁻⁴</td></tr>
+        <tr><td class="qty">Yank (rate of force change)</td><td class="unit-name">—</td><td class="sym">N/s</td><td class="formula">kg · m · s⁻³</td></tr>
+        <tr><td class="qty">Spectral irradiance</td><td class="unit-name">—</td><td class="sym">W/(m²·Hz)</td><td class="formula">kg · s⁻²</td></tr>
+        <tr><td class="qty">Thermal resistance</td><td class="unit-name">—</td><td class="sym">K/W</td><td class="formula">kg⁻¹ · m⁻² · s³ · K</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>

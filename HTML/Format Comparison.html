@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>French Canadian vs English Canadian Formatting</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f5f5f2;
+      color: #1a1a18;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.1);
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      color: #1a1a18;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #6b6b66;
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      table-layout: fixed;
+    }
+
+    thead th {
+      font-size: 12px;
+      font-weight: 500;
+      color: #6b6b66;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+      text-align: left;
+    }
+
+    thead th:first-child { width: 18%; }
+    thead th:nth-child(2), thead th:nth-child(3) { width: 28%; }
+    thead th:last-child { width: 26%; }
+
+    tbody td {
+      padding: 14px 12px;
+      border-bottom: 0.5px solid rgba(0,0,0,0.08);
+      vertical-align: top;
+      color: #1a1a18;
+      line-height: 1.5;
+    }
+
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: #f9f9f7; }
+
+    .cat {
+      font-weight: 500;
+      font-size: 13px;
+      color: #5f5e5a;
+    }
+
+    .ex {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 13px;
+      background: #f1efe8;
+      border-radius: 4px;
+      padding: 2px 6px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .fr { background: #E6F1FB; color: #0C447C; }
+    .en { background: #EAF3DE; color: #27500A; }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a18; color: #e8e6df; }
+      .container { background: #2c2c2a; border-color: rgba(255,255,255,0.1); }
+      h1 { color: #e8e6df; }
+      .subtitle { color: #888780; }
+      thead th { color: #888780; border-bottom-color: rgba(255,255,255,0.12); }
+      tbody td { color: #e8e6df; border-bottom-color: rgba(255,255,255,0.08); }
+      tbody tr:hover td { background: #3a3a38; }
+      .cat { color: #b4b2a9; }
+      .ex { background: #3a3a38; color: #e8e6df; }
+      .fr { background: #0C447C; color: #B5D4F4; }
+      .en { background: #27500A; color: #C0DD97; }
+    }
+
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr { display: block; }
+      thead tr { display: none; }
+      tbody td { padding: 8px 10px; }
+      tbody tr {
+        border: 0.5px solid rgba(0,0,0,0.1);
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        padding: 8px;
+      }
+      tbody td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        color: #888780;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>French Canadian vs English Canadian formatting</h1>
+    <p class="subtitle">Number, date, time, and currency conventions compared</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th><span class="badge fr">FR</span> French Canadian</th>
+          <th><span class="badge en">EN</span> English Canadian</th>
+          <th>Key difference</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="cat" data-label="Category">Decimal separator</td>
+          <td data-label="French Canadian">Comma (,)<br><span class="ex">3,14</span></td>
+          <td data-label="English Canadian">Period (.)<br><span class="ex">3.14</span></td>
+          <td data-label="Key difference">FR uses a comma; EN uses a period — opposite conventions.</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Thousands separator</td>
+          <td data-label="French Canadian">Thin non-breaking space<br><span class="ex">1&thinsp;000&thinsp;000</span></td>
+          <td data-label="English Canadian">Comma (,)<br><span class="ex">1,000,000</span></td>
+          <td data-label="Key difference">FR groups with a thin space; EN groups with a comma.</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Percentage</td>
+          <td data-label="French Canadian">Space before %<br><span class="ex">75&nbsp;%</span></td>
+          <td data-label="English Canadian">No space before %<br><span class="ex">75%</span></td>
+          <td data-label="Key difference">FR follows the French typographic rule of a space before the symbol.</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Short date</td>
+          <td data-label="French Canadian">YYYY-MM-DD (ISO) or DD/MM/YYYY<br><span class="ex">2025-07-14</span></td>
+          <td data-label="English Canadian">DD/MM/YYYY (or MM/DD/YYYY informal)<br><span class="ex">14/07/2025</span></td>
+          <td data-label="Key difference">FR strongly favours ISO 8601 (YYYY-MM-DD) in formal use.</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Long date</td>
+          <td data-label="French Canadian">Day · month name · year (lowercase month)<br><span class="ex">14 juillet 2025</span></td>
+          <td data-label="English Canadian">Day · month name · year<br><span class="ex">July 14, 2025</span></td>
+          <td data-label="Key difference">FR writes months in lowercase; EN capitalises them. EN often adds a comma after the day.</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Day of week</td>
+          <td data-label="French Canadian">Lowercase<br><span class="ex">lundi 14 juillet</span></td>
+          <td data-label="English Canadian">Capitalised<br><span class="ex">Monday, July 14</span></td>
+          <td data-label="Key difference">French does not capitalise days or months; English does.</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Time format</td>
+          <td data-label="French Canadian">24-hour clock (preferred)<br><span class="ex">14&nbsp;h&nbsp;30</span></td>
+          <td data-label="English Canadian">12-hour clock (preferred)<br><span class="ex">2:30 PM</span></td>
+          <td data-label="Key difference">FR uses a 24-hour system with « h » as separator; EN uses am/pm.</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Time separator</td>
+          <td data-label="French Canadian">Space + h + space<br><span class="ex">9&nbsp;h&nbsp;05</span></td>
+          <td data-label="English Canadian">Colon<br><span class="ex">9:05 AM</span></td>
+          <td data-label="Key difference">FR follows the OQLF standard using « h ».</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Currency symbol position</td>
+          <td data-label="French Canadian">Amount first, symbol after with a space<br><span class="ex">12,50&nbsp;$</span></td>
+          <td data-label="English Canadian">Symbol before amount, no space<br><span class="ex">$12.50</span></td>
+          <td data-label="Key difference">FR places $ after the number; EN places it before. A direct flip.</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Currency symbol (CAD)</td>
+          <td data-label="French Canadian">$ after amount; CA for disambiguation<br><span class="ex">12,50&nbsp;$ CA</span></td>
+          <td data-label="English Canadian">CA$ or CAD before amount<br><span class="ex">CA$12.50</span></td>
+          <td data-label="Key difference">Both use CA/CAD to distinguish from USD, but position it differently.</td>
+        </tr>
+
+        <tr>
+          <td class="cat" data-label="Category">Negative currency</td>
+          <td data-label="French Canadian">Minus before the amount<br><span class="ex">-12,50&nbsp;$</span></td>
+          <td data-label="English Canadian">Minus before symbol or parentheses<br><span class="ex">-$12.50 or ($12.50)</span></td>
+          <td data-label="Key difference">EN commonly uses parentheses in accounting contexts; FR does not.</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
