@@ -4,105 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paper Size & Image Aspect Ratio Breakdown</title>
+  <!-- Link to your style.css file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container mt-20">
+
+  <div class="container">
+    <h1>Paper Size & Image Aspect Ratio Breakdown</h1>
+    <div class="subtitle">These aspect ratios follow this structure <em>Width:Height</em></div>
     
-    <div class="card">
-      <h1 class="card-title" style="font-size: 28px; color: #1f2937; margin-bottom: 8px;">
-        Paper Size & Image Aspect Ratio Breakdown
-      </h1>
-      <p class="card-text" style="margin-bottom: 24px;">
-        These aspect ratios follow this structure: <strong>Width:Height</strong>
-      </p>
-      
-      <div class="table-responsive">
-        <table>
-          <thead>
-            <tr>
-              <th>Format</th>
-              <th>Orientation</th>
-              <th>Dimensions</th>
-              <th>Aspect Ratio (Whole Numbers)</th>
-              <th>Decimal Ratio</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>9:16</strong></td>
-              <td><span class="badge badge-secondary">Portrait</span></td>
-              <td>—</td>
-              <td>9:16</td>
-              <td>0.563:1</td>
-            </tr>
-            <tr>
-              <td><strong>11" by 17"</strong></td>
-              <td><span class="badge badge-secondary">Portrait</span></td>
-              <td>11 by 17</td>
-              <td>11:17</td>
-              <td>0.647:1</td>
-            </tr>
-            <tr>
-              <td><strong>2:3</strong></td>
-              <td><span class="badge badge-secondary">Portrait</span></td>
-              <td>—</td>
-              <td>2:3</td>
-              <td>0.667:1</td>
-            </tr>
-            <tr>
-              <td><strong>3:4</strong></td>
-              <td><span class="badge badge-secondary">Portrait</span></td>
-              <td>—</td>
-              <td>3:4</td>
-              <td>0.750:1</td>
-            </tr>
-            <tr>
-              <td><strong>11" by 8.5"</strong></td>
-              <td><span class="badge badge-secondary">Portrait</span></td>
-              <td>8.5 by 11</td>
-              <td>17:22</td>
-              <td>0.773:1</td>
-            </tr>
-            <tr>
-              <td><strong>11" by 8.5"</strong></td>
-              <td><span class="badge badge-primary">Landscape</span></td>
-              <td>11 by 8.5</td>
-              <td>22:17</td>
-              <td>1.294:1</td>
-            </tr>
-            <tr>
-              <td><strong>4:3</strong></td>
-              <td><span class="badge badge-primary">Landscape</span></td>
-              <td>—</td>
-              <td>4:3</td>
-              <td>1.333:1</td>
-            </tr>
-            <tr>
-              <td><strong>3:2</strong></td>
-              <td><span class="badge badge-primary">Landscape</span></td>
-              <td>—</td>
-              <td>3:2</td>
-              <td>1.500:1</td>
-            </tr>
-            <tr>
-              <td><strong>11" by 17"</strong></td>
-              <td><span class="badge badge-primary">Landscape</span></td>
-              <td>17 by 11</td>
-              <td>17:11</td>
-              <td>1.545:1</td>
-            </tr>
-            <tr>
-              <td><strong>16:9</strong></td>
-              <td><span class="badge badge-primary">Landscape</span></td>
-              <td>—</td>
-              <td>16:9</td>
-              <td>1.778:1</td>
-            </tr>
-          </tbody>
-        </table>
-      </div> </div> <footer class="footer">
-    </footer>
+    <table>
+      <thead>
+        <tr>
+          <th>Format</th>
+          <th>Orientation</th>
+          <th>Dimensions</th>
+          <th>Aspect Ratio</th>
+          <th>Decimal aspect Ratio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Format"><span class="cat">9:16</span></td>
+          <td data-label="Orientation"><span class="badge accentA">Portrait</span></td>
+          <td data-label="Dimensions">—</td>
+          <td data-label="Aspect Ratio">9:16</td>
+          <td data-label="Aspect Ratio"><span class="ex">0.563:1</span></td>
+        </tr>
+        <tr>
+          <td data-label="Format"><span class="cat">11" by 17"</span></td>
+          <td data-label="Orientation"><span class="badge accentA">Portrait</span></td>
+          <td data-label="Dimensions">11 by 17</td>
+          <td data-label="Aspect Ratio">11:17</td>
+          <td data-label="Aspect Ratio"><span class="ex">0.647:1</span></td>
+        </tr>
+        <tr>
+          <td data-label="Format"><span class="cat">2:3</span></td>
+          <td data-label="Orientation"><span class="badge accentA">Portrait</span></td>
+          <td data-label="Dimensions">—</td>
+          <td data-label="Aspect Ratio">2:3</td>
+          <td data-label="Aspect Ratio"><span class="ex">0.667:1</span></td>
+        </tr>
+        <tr>
+          <td data-label="Format"><span class="cat">3:4</span></td>
+          <td data-label="Orientation"><span class="badge accentA">Portrait</span></td>
+          <td data-label="Dimensions">—</td>
+          <td data-label="Aspect Ratio">3:4</td>
+          <td data-label="Aspect Ratio"><span class="ex">0.750:1</span></td>
+        </tr>
+        <tr>
+          <td data-label="Format"><span class="cat">11" by 8.5"</span></td>
+          <td data-label="Orientation"><span class="badge accentA">Portrait</span></td>
+          <td data-label="Dimensions">8.5 by 11</td>
+          <td data-label="Aspect Ratio">17:22 </td>
+          <td data-label="Aspect Ratio"><span class="ex">0.773:1</span></td>
+        </tr>
+        <tr>
+          <td data-label="Format"><span class="cat">11" by 8.5"</span></td>
+          <td data-label="Orientation"><span class="badge accentB">Landscape</span></td>
+          <td data-label="Dimensions">11 by 8.5</td>
+          <td data-label="Aspect Ratio">22:17 </td>
+          <td data-label="Aspect Ratio"><span class="ex">1.294:1</span></td>
+        </tr>
+        <tr>
+          <td data-label="Format"><span class="cat">4:3</span></td>
+          <td data-label="Orientation"><span class="badge accentB">Landscape</span></td>
+          <td data-label="Dimensions">—</td>
+          <td data-label="Aspect Ratio">4:3 </td>
+          <td data-label="Aspect Ratio"><span class="ex">1.333:1</span></td>
+        </tr>
+        <tr>
+          <td data-label="Format"><span class="cat">3:2</span></td>
+          <td data-label="Orientation"><span class="badge accentB">Landscape</span></td>
+          <td data-label="Dimensions">—</td>
+          <td data-label="Aspect Ratio">3:2 </td>
+          <td data-label="Aspect Ratio"><span class="ex">1.500:1</span></td>
+        </tr>
+        <tr>
+          <td data-label="Format"><span class="cat">11" by 17"</span></td>
+          <td data-label="Orientation"><span class="badge accentB">Landscape</span></td>
+          <td data-label="Dimensions">17 by 11</td>
+          <td data-label="Aspect Ratio">17:11 </td>
+          <td data-label="Aspect Ratio"><span class="ex">1.545:1</span></td>
+        </tr>
+        <tr>
+          <td data-label="Format"><span class="cat">16:9</span></td>
+          <td data-label="Orientation"><span class="badge accentB">Landscape</span></td>
+          <td data-label="Dimensions">—</td>
+          <td data-label="Aspect Ratio">16:9 </td>
+          <td data-label="Aspect Ratio"><span class="ex">1.778:1</span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+
 </body>
 </html>
