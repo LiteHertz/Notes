@@ -42,3 +42,10 @@ Main Element Types
 - **Access Method**: `QueryName`
 - **Best For**: Chaining transformations
 - **Example**: `Sales_Raw`, `Customer_Cleaned`
+
+## Variables
+
+These are the same, but the #"" is required when using spaces or special characters
+
+#"My Variable" = 5,  
+MyVariable = 5
