@@ -43,6 +43,7 @@
 ### Change
 
 - Set Wallpapers to those of OS DATA Folder
+- Set date to ISO 8601 format
 
 ---
 
