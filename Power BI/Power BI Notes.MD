@@ -49,3 +49,8 @@ These are the same, but the #"" is required when using spaces or special charact
 
 #"My Variable" = 5,  
 MyVariable = 5
+
+## Power BI Settings to change
+
+1. Page Alignement &rarr; Align the page in the center of the wallpaper (2nd option)
+2. Customize appearence &rarr; Dark
