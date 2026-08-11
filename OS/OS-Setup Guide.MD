@@ -39,6 +39,8 @@
 - Wireshark
 - OBS Studio
 - Camo
+- Hex viewer tool
+- Diff checker
 
 ### Change
 
