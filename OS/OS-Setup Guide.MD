@@ -130,7 +130,6 @@ Config :
 - Mos : Activate start a login, disable keys and smooth scrolling
 - Alttab : set command + tab shorcut and deactivate capture windows in the background
 
-
 ### Install (MacOS)
 
 - [Mos](https://mos.caldis.me/) `brew install --cask mos`
