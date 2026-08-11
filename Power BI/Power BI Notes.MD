@@ -47,8 +47,10 @@ Main Element Types
 
 These are the same, but the #"" is required when using spaces or special characters
 
+```Mcode
 #"My Variable" = 5,  
 MyVariable = 5
+```
 
 ## Power BI Settings to change
 
