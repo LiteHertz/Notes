@@ -1,0 +1,124 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #1a1a18;
+  color: #e8e6df;
+  padding: 2rem 1rem;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  background: #2c2c2a;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-color: rgba(255,255,255,0.1);
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #e8e6df;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #888780;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  table-layout: auto; /* allow columns to size automatically */
+  word-break: break-word;
+}
+
+thead th {
+  font-size: 12px;
+  font-weight: 500;
+  color: #888780;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  border-bottom-color: rgba(255,255,255,0.12);
+  text-align: left;
+}
+
+/* Remove hard-coded column percentages so table can scale naturally.
+  If you need specific column sizing, wrap the table in `.table-responsive`
+  and optionally set column widths in markup or via CSS variables. */
+
+/* Responsive wrapper to allow horizontal scrolling on narrow viewports */
+.table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* Ensure headers don't force fixed widths */
+thead th { width: auto; }
+
+tbody td {
+  padding: 14px 12px;
+  border-bottom: 0.5px solid rgba(0,0,0,0.08);
+  border-bottom-color: rgba(255,255,255,0.08);
+  vertical-align: top;
+  color: #e8e6df;
+  line-height: 1.5;
+}
+
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover td { background: #3a3a38; }
+
+.cat {
+  font-weight: 500;
+  font-size: 13px;
+  color: #b4b2a9;
+}
+
+.ex {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  background: #3a3a38;
+  color: #e8e6df;
+  border-radius: 4px;
+  padding: 2px 6px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.accentA { background: #0C447C; color: #B5D4F4; }
+.accentB { background: #27500A; color: #C0DD97; }
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr { display: block; }
+  thead tr { display: none; }
+  tbody td { padding: 8px 10px; }
+  tbody tr {
+    border: 0.5px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 8px;
+  }
+  tbody td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: #888780;
+    margin-bottom: 4px;
+  }
+}

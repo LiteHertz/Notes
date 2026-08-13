@@ -39,10 +39,13 @@
 - Wireshark
 - OBS Studio
 - Camo
+- Hex viewer tool
+- Diff checker
 
 ### Change
 
 - Set Wallpapers to those of OS DATA Folder
+- Set date to ISO 8601 format
 
 ---
 
@@ -126,7 +129,6 @@ Config :
 
 - Mos : Activate start a login, disable keys and smooth scrolling
 - Alttab : set command + tab shorcut and deactivate capture windows in the background
-
 
 ### Install (MacOS)
 

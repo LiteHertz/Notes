@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derived SI Units Breakdown</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline gap buffer to separate sections beautifully within the same container */
+    .section-spacer {
+      margin-top: 2.5rem;
+    }
+    .order-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 0.75rem;
+    }
+    @media (max-width: 600px) {
+      .order-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Derived SI Units</h1>
+    <div class="subtitle">Organized by sequential order of derivation from fundamental base units</div>
+
+    <div class="order-meta">
+      <span class="badge accentB">Order 0 — Base units</span>
+      <span class="cat">Fundamental, not derived</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Unit</th>
+          <th>Symbol</th>
+          <th>Definition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Length</span></td>
+          <td data-label="Unit">Metre</td>
+          <td data-label="Symbol">m</td>
+          <td data-label="Definition"><span class="ex">base unit</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Mass</span></td>
+          <td data-label="Unit">Kilogram</td>
+          <td data-label="Symbol">kg</td>
+          <td data-label="Definition"><span class="ex">base unit</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Time</span></td>
+          <td data-label="Unit">Second</td>
+          <td data-label="Symbol">s</td>
+          <td data-label="Definition"><span class="ex">base unit</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Temperature</span></td>
+          <td data-label="Unit">Kelvin</td>
+          <td data-label="Symbol">K</td>
+          <td data-label="Definition"><span class="ex">base unit</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="order-meta section-spacer">
+      <span class="badge accentA">Order 1 — First derivative</span>
+      <span class="cat">Directly from base units</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Unit</th>
+          <th>Symbol</th>
+          <th>Definition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Velocity / Speed</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">m/s</td>
+          <td data-label="Definition"><span class="ex">m · s⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Area</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">m²</td>
+          <td data-label="Definition"><span class="ex">m²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Volume</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">m³</td>
+          <td data-label="Definition"><span class="ex">m³</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Frequency</span></td>
+          <td data-label="Unit">Hertz</td>
+          <td data-label="Symbol">Hz</td>
+          <td data-label="Definition"><span class="ex">s⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Density</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">kg/m³</td>
+          <td data-label="Definition"><span class="ex">kg · m⁻³</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Specific volume</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">m³/kg</td>
+          <td data-label="Definition"><span class="ex">m³ · kg⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Angular velocity</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">rad/s</td>
+          <td data-label="Definition"><span class="ex">s⁻¹</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="order-meta section-spacer">
+      <span class="badge accentA">Order 2 — Second derivative</span>
+      <span class="cat">One step beyond velocity / area</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Unit</th>
+          <th>Symbol</th>
+          <th>Definition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Acceleration</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">m/s²</td>
+          <td data-label="Definition"><span class="ex">m · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Angular acceleration</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">rad/s²</td>
+          <td data-label="Definition"><span class="ex">s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Kinematic viscosity</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">m²/s</td>
+          <td data-label="Definition"><span class="ex">m² · s⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Volumetric flow rate</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">m³/s</td>
+          <td data-label="Definition"><span class="ex">m³ · s⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Mass flow rate</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">kg/s</td>
+          <td data-label="Definition"><span class="ex">kg · s⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Heat flux density</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">W/m²</td>
+          <td data-label="Definition"><span class="ex">kg · s⁻³</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="order-meta section-spacer">
+      <span class="badge accentB">Order 3 — Third derivative</span>
+      <span class="cat">Involves force, energy, or momentum</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Unit</th>
+          <th>Symbol</th>
+          <th>Definition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Force</span></td>
+          <td data-label="Unit">Newton</td>
+          <td data-label="Symbol">N</td>
+          <td data-label="Definition"><span class="ex">kg · m · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Momentum / Impulse</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">kg·m/s</td>
+          <td data-label="Definition"><span class="ex">kg · m · s⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Torque / Moment</span></td>
+          <td data-label="Unit">Newton-metre</td>
+          <td data-label="Symbol">N·m</td>
+          <td data-label="Definition"><span class="ex">kg · m² · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Angular momentum</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">kg·m²/s</td>
+          <td data-label="Definition"><span class="ex">kg · m² · s⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Pressure / Stress</span></td>
+          <td data-label="Unit">Pascal</td>
+          <td data-label="Symbol">Pa</td>
+          <td data-label="Definition"><span class="ex">kg · m⁻¹ · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Dynamic viscosity</span></td>
+          <td data-label="Unit">Pascal-second</td>
+          <td data-label="Symbol">Pa·s</td>
+          <td data-label="Definition"><span class="ex">kg · m⁻¹ · s⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Surface tension</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">N/m</td>
+          <td data-label="Definition"><span class="ex">kg · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Stiffness / Spring constant</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">N/m</td>
+          <td data-label="Definition"><span class="ex">kg · s⁻²</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="order-meta section-spacer">
+      <span class="badge accentB">Order 4 — Energy & Power</span>
+      <span class="cat">Force × distance, or power quantities</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Unit</th>
+          <th>Symbol</th>
+          <th>Definition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Energy / Work / Heat</span></td>
+          <td data-label="Unit">Joule</td>
+          <td data-label="Symbol">J</td>
+          <td data-label="Definition"><span class="ex">kg · m² · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Power / Radiant flux</span></td>
+          <td data-label="Unit">Watt</td>
+          <td data-label="Symbol">W</td>
+          <td data-label="Definition"><span class="ex">kg · m² · s⁻³</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Kinetic energy</span></td>
+          <td data-label="Unit">Joule</td>
+          <td data-label="Symbol">J</td>
+          <td data-label="Definition"><span class="ex">½ mv² = kg · m² · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Moment of inertia</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">kg·m²</td>
+          <td data-label="Definition"><span class="ex">kg · m²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Specific heat capacity</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">J/(kg·K)</td>
+          <td data-label="Definition"><span class="ex">m² · s⁻² · K⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Thermal conductivity</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">W/(m·K)</td>
+          <td data-label="Definition"><span class="ex">kg · m · s⁻³ · K⁻¹</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Gravitational potential</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">J/kg</td>
+          <td data-label="Definition"><span class="ex">m² · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Absorbed dose</span></td>
+          <td data-label="Unit">Gray</td>
+          <td data-label="Symbol">Gy</td>
+          <td data-label="Definition"><span class="ex">m² · s⁻²</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="order-meta section-spacer">
+      <span class="badge accentA">Order 5 — Composite</span>
+      <span class="cat">Built on energy, power, or compound structures</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Unit</th>
+          <th>Symbol</th>
+          <th>Definition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Power density</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">W/m³</td>
+          <td data-label="Definition"><span class="ex">kg · m⁻¹ · s⁻³</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Energy density</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">J/m³</td>
+          <td data-label="Definition"><span class="ex">kg · m⁻¹ · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Specific energy</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">J/kg</td>
+          <td data-label="Definition"><span class="ex">m² · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Jerk</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">m/s³</td>
+          <td data-label="Definition"><span class="ex">m · s⁻³</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Snap (jounce)</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">m/s⁴</td>
+          <td data-label="Definition"><span class="ex">m · s⁻⁴</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Yank (force rate)</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">N/s</td>
+          <td data-label="Definition"><span class="ex">kg · m · s⁻³</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Spectral irradiance</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">W/(m²·Hz)</td>
+          <td data-label="Definition"><span class="ex">kg · s⁻²</span></td>
+        </tr>
+        <tr>
+          <td data-label="Quantity"><span class="cat">Thermal resistance</span></td>
+          <td data-label="Unit">—</td>
+          <td data-label="Symbol">K/W</td>
+          <td data-label="Definition"><span class="ex">kg⁻¹ · m⁻² · s³ · K</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+</html>
