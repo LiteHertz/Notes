@@ -41,6 +41,8 @@
 - Camo
 - Hex viewer tool
 - Diff checker
+- qBit
+
 
 ### Change
 
@@ -135,9 +137,12 @@ Config :
 - [Mos](https://mos.caldis.me/) `brew install --cask mos`
 - Alttab
 - SwiftQuit
-- iTerm
+- iTerm2
 - Amphetamine
 - Onyx
 - Raycast
 - Rectangle
 - Neardrop
+- OmniDiskSweeper
+- Whisky
+- Eject SSD and UTM
