@@ -115,6 +115,7 @@ Config :
 - Turn off narator shortcut (Settings &rarr; Accessibility &rarr; Narrator)
 - Turn off sticky keys shortcut (Settings &rarr; Accessibility &rarr; Keyboard)
 - Show battery percentage
+- Disable Windows Search (Win + r, `services.msc` (as admin (ctrl + shift + enter)), Windows Search, right click, stop, right click, properties, startup, diable)
 
 ---
 
