@@ -17,3 +17,7 @@
 
 WCAG
 see this link : [Contrast chekcer](https://webaim.org/resources/contrastchecker/)
+
+## Typst
+
+[Table generator](https://www.latex-tables.com/?format=typst&force)
