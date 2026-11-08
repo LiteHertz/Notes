@@ -71,23 +71,6 @@
 - Setup lock screen settings
 - Setup window snap (Settings -> System -> Multi-tasking -> SnapWindows -> Snap windows On, all the rest off)
 - Setup Start
-- Setup WindHawk
-    > Start Menu Styler Theme : `Oversimplified&Accentuated`  
-    >
-    > Notification Center Styler Theme : `Oversimplified&Accentuated`  
-    >
-    >Windows 11 Taskbar Styler Theme : `Oversimplified&Accentuated`  
-    >
-    >Taskbar height and icon size
-    >
-    > ```json
-    > TaskbarHeight: 36
-    > IconSize: 24
-    > TaskbarButtonWidth: 40
-    > IconSizeSmall: 10
-    > TaskbarButtonWidthSmall: 10
-    > ```
-
 - Setup AutoHotKey
     > Win + R
     >
@@ -116,6 +99,7 @@ Config :
 - Turn off sticky keys shortcut (Settings &rarr; Accessibility &rarr; Keyboard)
 - Show battery percentage
 - Disable Windows Search (Win + r, `services.msc` (as admin (ctrl + shift + enter)), Windows Search, right click, stop, right click, properties, startup, diable)
+- Stop 400ms delay (Win + r, `regedit`, `Computer\HKEY_CURRENT_USER\Control Panel\Desktop`, `MenuShowDelay` &rarr; 0)
 
 ---
 
