@@ -57,6 +57,13 @@ try {
     Write-Host "Failed to set Log Elevated Processes: $_"
 }
 
+try {
+    Set-ItemProperty -Path $regPath -Name "Require Authentication For Privileges" -Value 0 -Type DWORD -ErrorAction SilentlyContinue
+    Write-Host "Log Elevated Processes set to false"
+} catch {
+    Write-Host "Failed to set Require Authentication For Privileges: $_"
+}
+
 Write-Host "Script done" -ForegroundColor Blue
 Read-Host "Press Enter to exit"
 exit
