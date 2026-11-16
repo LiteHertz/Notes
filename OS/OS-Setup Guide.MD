@@ -18,6 +18,8 @@
 - Sublime text
 - Handbrake
 - Anki
+- Raycast
+- Logi options +
 
 ### Install (Optional)
 
@@ -43,7 +45,6 @@
 - Diff checker
 - qBit
 
-
 ### Change
 
 - Set Wallpapers to those of OS DATA Folder
@@ -62,7 +63,7 @@
 
 ### Change (Windows)
 
-- Install [MacOS cursors by antiden](https://github.com/antiden/macOS-cursors-for-Windows)
+- Install [MacOS cursors by antiden](https://github.com/antiden/macOS-cursors-for-Windows), [Direct link](https://github.com/antiden/macOS-cursors-for-Windows/archive/refs/heads/main.zip)
 - Turn on clipboard history (Win + V)
     (Settings -> Personalisation)
 - Turn on transparency effects
