@@ -20,6 +20,7 @@
 - Anki
 - Raycast
 - Logi options +
+- Typst
 
 ### Install (Optional)
 
