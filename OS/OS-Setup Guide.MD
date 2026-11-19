@@ -102,6 +102,7 @@ Config :
 - Show battery percentage
 - Disable Windows Search (Win + r, `services.msc` (as admin (ctrl + shift + enter)), Windows Search, right click, stop, right click, properties, startup, diable)
 - Stop 400ms delay (Win + r, `regedit`, `Computer\HKEY_CURRENT_USER\Control Panel\Desktop`, `MenuShowDelay` &rarr; 0)
+- [USB driver linksys WUSB](https://oemdrivers.com/network-linksys-wusb6100m-ac600-wi-fi-usb-adapter)
 
 ---
 
